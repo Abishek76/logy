@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/input_layout_email_uservendor">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:backgroundTint="#C9C9C9"
+                android:id="@+id/input_email_uservendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:gravity="left"
+                android:hint="@string/hint_email" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/input_layout_alternateemail_uservendor">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:backgroundTint="#C9C9C9"
+                android:id="@+id/input_alternateemail_uservendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:gravity="left"
+                android:hint="@string/hint_alternateemail" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/input_layout_firstname_uservendor">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:backgroundTint="#C9C9C9"
+                android:id="@+id/input_firstname_uservendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:gravity="left"
+                android:hint="@string/hint_firstname" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/input_layout_lastname_uservendor">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:backgroundTint="#C9C9C9"
+                android:id="@+id/input_lastname_uservendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:gravity="left"
+                android:hint="@string/hint_lastname" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <Button
+                android:text="Save"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="60dp"
+                android:theme="@style/MyButton"
+                android:gravity="center"
+                android:id="@+id/button_saveuserinfo_vendor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

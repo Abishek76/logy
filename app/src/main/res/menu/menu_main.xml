@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.drnds.titlelogy.activity.client.gridactivity.GridviewActivity">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+
+
+        android:title="@string/searchview"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+</menu>

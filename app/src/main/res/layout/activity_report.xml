@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.drnds.titlelogy.activity.client.gridactivity.GridviewActivity">
+    <include
+        android:id="@+id/toolbar_report"
+        layout="@layout/toolbar_custom"
+
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/reportswipe_container"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_report"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recycle_report"
+            android:layout_below="@+id/toolbar_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:scrollbars="vertical"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:src="@drawable/empty_result"
+            android:visibility="gone"
+            android:id="@+id/report_empty_view_image"
+            android:tint="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/report_empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/report_empty_view_image"
+            android:text="No data available"
+            android:visibility="gone"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

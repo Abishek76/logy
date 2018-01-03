@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/nav_scoreboard_vendor"
+            android:icon="@drawable/home_nav"
+            android:title="@string/nav_scoreboard_vendor" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/nav_dashboard_vendor"
+            android:icon="@drawable/dashboard_nav"
+            android:title="@string/nav_dashboard_vendor" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_middle">
+        <item
+            android:id="@+id/nav_orderqueue_vendor"
+            android:icon="@drawable/queue_512"
+            android:title="@string/nav_myorder_vendor" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_master">
+        <item
+            android:id="@+id/nav_subclient_vendor"
+            android:icon="@drawable/master_nav"
+            android:title="@string/nav_viewsubclients_vendor"
+            />
+        <item
+            android:id="@+id/nav_user_vendor"
+            android:icon="@drawable/create_user"
+            android:title="@string/nav_viewclients_vendor"
+            />
+        <item
+            android:id="@+id/nav_report_vendor"
+            android:icon="@drawable/ic_reports"
+            android:title="@string/nav_report_vendor"
+            />
+    </group>
+
+
+</menu>

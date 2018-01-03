@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar_gridvendorupload"
+        layout="@layout/toolbar_custom"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Document Type"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="5dp"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/griddocument_venspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            app:backgroundTint="#C9C9C9"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_weight="6"
+            android:id="@+id/input_layout_description_vendor_grid">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/input_discription_vendor_grid"
+                android:textColorHint="#9E9E9E"
+                android:hint="*Enter the Description" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sc"
+            android:id="@+id/vencam_gridscanner"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vencamera_gridfile"
+            android:src="@drawable/ic_camera"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:id="@+id/venfile_gridattach"
+            android:src="@drawable/ic_attach"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

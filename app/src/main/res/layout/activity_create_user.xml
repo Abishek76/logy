@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar_createuser"
+            layout="@layout/toolbar_custom"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:id="@+id/input_layout_createuseremail">
+
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/input_createuseremail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+
+
+                    android:gravity="left"
+                    android:hint="@string/hint_email" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/input_layout_createuseraltemail">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:id="@+id/input_createuseraltemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#C9C9C9"
+
+                    android:hint="@string/hint_alternateemail" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/input_layout_createuserfname">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/input_createuserfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/hint_firstname" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/input_layout_createuserlname">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/input_createuserlname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/hint_lastname" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/input_layout_createuserpassword"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/input_createuserpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/hint_password" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                app:passwordToggleEnabled="true"
+                android:id="@+id/input_layout_createuserconpassword">
+
+                <EditText
+
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:id="@+id/input_createuserconpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:backgroundTint="#C9C9C9"
+                    android:hint="@string/hint_conpass" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <Button
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="60dp"
+                android:theme="@style/MyButton"
+                android:id="@+id/button_createusersubmit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <Button
+                android:text="Cancel"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:theme="@style/MyButton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:id="@+id/button_createusercancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

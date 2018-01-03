@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_middle">
+        <item
+            android:id="@+id/nav_addorder"
+            android:icon="@drawable/add_nav"
+            android:title="@string/nav_addorder" />
+
+
+
+        <item
+            android:id="@+id/nav_orderqueue"
+            android:icon="@drawable/queue_512"
+            android:title="@string/nav_orderqueue" />
+
+
+
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/nav_scoreboard"
+            android:icon="@drawable/home_nav"
+            android:title="@string/nav_scoreboard" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard_nav"
+            android:title="@string/nav_dashboard" />
+    </group>
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_master">
+        <item
+            android:id="@+id/nav_subclient"
+            android:icon="@drawable/master_nav"
+            android:title="@string/nav_subclient"
+            />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/create_user"
+            android:title="@string/nav_user"
+            />
+        <item
+            android:id="@+id/nav_vendor"
+            android:icon="@drawable/view_vendor"
+            android:title="@string/nav_vendor"
+            />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_reports"
+            android:title="@string/nav_report"
+            />
+    </group>
+
+
+</menu>

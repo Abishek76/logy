@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#205DA9</color>
+    <color name="colorPrimaryDark">#205DA9</color>
+    <color name="colorAccent">#205DA9</color>
+    <color name="toolbarWhite">#ffffff</color>
+    <color name="blue">#2196F3</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="icongrey">#90A4AE</color>
+    <color name="fontcolor">#757575</color>
+    <color name="fontcolorhead">#424242</color>
+    <color name="fontcolordash">#616161</color>
+    <!-- edit text -->
+    <color name="textColorHint">#215DAA</color>
+    <color name="colorControlNormal">#2258C5</color>
+    <color name="colorControlActivated">#215DAA</color>
+    <color name="colorControlHighlight">#215DAA</color>
+
+    <color name="colorrefresh1">#205DA9</color>
+    <!--<color name="colorrefresh2">#03A9F4</color>-->
+    <!--<color name="colorrefresh3">#CDDC39</color>-->
+    <color name="md_indigo_500_25">#ffffff</color>
+    <color name="md_white_1000">#ffffff</color>
+    <color name="blue_nav">#205DA9</color>
+    <color name="white_nav">#ffffff</color>
+    <color name="md_indigo_500">#ffffff</color>
+    <color name="md_indigo_700">#ffffff</color>
+
+    <array name="indigos">
+        <item>@color/md_indigo_500</item>
+    </array>
+    <!--recycler-->
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fed776</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+    <color name="icon_edit">#2196F3</color>
+    <color name="icon_delete">#F44336</color>
+    <color name="list_item_selected_state">#F4F6F6</color>
+    <color name="list_item_normal_state">#FFFFFF</color>
+    <!---->
+</resources>

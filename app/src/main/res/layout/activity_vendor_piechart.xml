@@ -1,0 +1,330 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/vendor_toolbar_piechart"
+        layout="@layout/toolbar_custom"
+        />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/vendor_toolbar_piechart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart1"
+        android:padding="2dp"
+        android:layout_marginTop="5dp">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo1"
+                android:layout_below="@+id/chart1"
+                android:layout_width="20dp"
+                android:background="#000"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                />
+            <TextView
+                android:padding="5dp"
+                android:text="Neworders"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                />
+            <TextView
+                android:text="1"
+                android:padding="5dp"
+                android:id="@+id/text1"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="#000" />
+            <TextView
+
+                android:padding="5dp"
+                android:text="Search"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                />
+            <TextView
+                android:padding="5dp"
+                android:text="1"
+                android:id="@+id/text2"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo3"
+                android:layout_width="20dp"
+                android:background="#000"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:text="Searchqc"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:text="1"
+                android:padding="5dp"
+                android:id="@+id/text3"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="#000" />
+
+            <TextView
+
+                android:padding="5dp"
+                android:text="Typing"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:text="1"
+                android:id="@+id/text4"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo5"
+                android:layout_width="20dp"
+                android:background="#000"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Typingqc"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:text="1"
+                android:padding="5dp"
+                android:id="@+id/text5"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="#000" />
+
+            <TextView
+
+                android:padding="5dp"
+                android:text="Finalreview"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:text="1"
+                android:id="@+id/text6"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo7"
+                android:layout_width="20dp"
+                android:background="#000"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Taxorders"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:text="1"
+                android:padding="5dp"
+                android:id="@+id/text7"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="#000" />
+
+            <TextView
+
+                android:padding="5dp"
+                android:text="Cancelled"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:padding="5dp"
+                android:text="1"
+                android:id="@+id/text8"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo9"
+                android:layout_width="20dp"
+                android:background="#000"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                />
+
+
+            <TextView
+                android:padding="5dp"
+                android:text="Clarification"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:text="1"
+                android:padding="5dp"
+                android:id="@+id/text9"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/btn_capture_photo10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="#000" />
+
+            <TextView
+
+                android:padding="5dp"
+                android:text="Hold"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+
+                />
+
+            <TextView
+                android:padding="5dp"
+                android:text="1"
+                android:id="@+id/text10"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</RelativeLayout>
+

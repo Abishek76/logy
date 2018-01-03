@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:tag="cards main container">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/tools"
+
+        android:id="@+id/card_griupload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="8dp"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:text="DocumentType"
+                    android:id="@+id/text_documenttype"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:textColor="#676767"
+                    android:text="Albert"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/vendorgrid_doumenttype"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:text="Description"
+                    android:id="@+id/text_description"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:textColor="#676767"
+                    android:text="abc@gmail.com"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/vendorgrid_description"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:text="UploadedDate"
+                    android:id="@+id/text_date"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:textColor="#676767"
+                    android:text="abc@gmail.com"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/vendorgrid_uploadeddate"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    app:srcCompat="@drawable/download"
+                    android:id="@+id/vendorgrid_imgdocdownload"
+                    android:text="download"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

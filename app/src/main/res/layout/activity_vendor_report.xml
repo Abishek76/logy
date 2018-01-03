@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/vendor_toolbar_report"
+        layout="@layout/toolbar_custom"
+
+        />
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vendor_recycle_report"
+        android:layout_below="@+id/vendor_toolbar_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:scrollbars="vertical"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:src="@drawable/empty_result"
+        android:visibility="gone"
+        android:id="@+id/vendor_report_empty_view_image"
+        android:tint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/vendor_report_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vendor_report_empty_view_image"
+        android:text="No data available"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

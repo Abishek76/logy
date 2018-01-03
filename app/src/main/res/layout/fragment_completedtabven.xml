@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Client *"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="5dp"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/vendorcom_clientspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            app:backgroundTint="#C9C9C9"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="SubClient *"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="5dp"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/vendorcom_subclientspinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            app:backgroundTint="#C9C9C9"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/comtabven_input_layout_frmdate">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:id="@+id/comven_frm_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:gravity="left"
+                android:hint="@string/hint_frmdate" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/comtabven_input_layout_todate">
+
+
+            <EditText
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:id="@+id/comven_to_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:gravity="start"
+                android:hint="@string/hint_todate" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/com_vensubmittab"
+            android:theme="@style/MyButton"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_height="60dp"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+</LinearLayout>

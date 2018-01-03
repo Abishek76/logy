@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">Titlelogy</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <!--navigation menu items-->
+    <string name="nav_addorder">AddOrders</string>
+    <string name="nav_orderqueue">Orders Queue</string>
+    <string name="nav_scoreboard">Scoreboard</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_subclient">Create Subclient</string>
+    <string name="nav_user">Create User</string>
+    <string name="nav_vendor">View Vendor</string>
+    <string name="nav_report">Report</string>
+    <string name="nav_processing">Processing Queue</string>
+    <string name="nav_pending">Pending Queue</string>
+    <string name="nav_completed">Completed</string>
+
+
+    <string name="nav_myorder">MyOrder</string>
+    <string name="nav_viewclients">View Clients</string>
+    <string name="nav_viewsubclients">View SubClients</string>
+
+
+    <string name="nav_myaccount">MyAccount</string>
+
+
+    <!--navigation menu items-->
+    <string-array name="nav_item_activity_titles">
+
+
+        <item>AddOrders</item>
+        <item>OrdersQueue</item>
+        <item>Scoreboard</item>
+        <item>Dashboard</item>
+        <item>CreateSubclient</item>
+        <item>CreateUser</item>
+        <item>ViewVendor</item>
+        <!--<item>MyAccount</item>-->
+        <item>Production Report</item>
+    </string-array>
+    <string-array name="nav_item_activity_vendortitles">
+        <item>Scoreboard</item>
+        <item>Dashboard</item>
+        <item>MyOrder</item>
+        <item>ViewSubclients</item>
+        <item>ViewClients</item>
+        <item>Report</item>
+        <item>MyAccount</item>
+    </string-array>
+    <!--Edittext-->
+    <string name="hint_email">Email *</string>
+    <string name="errorfirstname">Enter First name</string>
+    <string name="hint_password">Password *</string>
+    <string name="err_msg_companyname">Enter Companyname</string>
+    <string name="err_msg_customername">Enter Customername</string>
+    <string name="err_msg_email">Enter Valid Email Address</string>
+    <string name="err_msg_companyemail">Enter Valid CompanyEmail</string>
+    <string name="err_msg_password">Enter the Password</string>
+    <string name="err_msg_cnfpassword">Enter the Conform Password</string>
+    <string name="err_msg_currentpassword">Enter Current password</string>
+    <string name="err_msg_newpassword">Enter New password</string>
+    <string name="err_msg_reenterpassword">Reenter New Password</string>
+    <string name="err_msg_firstname">Enter FirstName</string>
+    <string name="err_msg_borrowername">Enter BorrowerName</string>
+    <string name="err_msg_orderno">Enter Orderno</string>
+    <string name="err_msg_apn">Enter Apn</string>
+    <string name="err_msg_description">Enter Description</string>
+    <string name="err_password_confirmation">Passwords Donot Match </string>
+    <string name="err_msg_search">Enter two or more characters to search</string>
+    <string name="err_msg_frmdate">Select From-Date</string>
+    <string name="err_msg_todate">Select To-Date</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_ordernum">Order Number *</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_custname">Customer Name *</string>
+    <string name="hint_orderdate">Order Date *</string>
+    <string name="hint_frmdate">From Date</string>
+    <string name="hint_todate">To Date</string>
+    <string name="hint_city">City</string>
+    <string name="hint_zip">Zip</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_borrowername">Borrower Name *</string>
+    <string name="hint_subemail">Email *</string>
+    <string name="hint_subaltemail">Alternative Email</string>
+    <string name="hint_apn">Apn *</string>
+    <string name="hint_discription">Description</string>
+    <string name="hint_companyname">Company Name *</string>
+    <string name="hint_groupemail">Company Default/Group Email *</string>
+    <string name="hint_phno">Phone No</string>
+    <string name="hint_fxno">Fax No</string>
+    <string name="hint_alternateemail">Alternate Email</string>
+    <string name="hint_firstname">First name *</string>
+    <string name="hint_conpass">Confirm Password *</string>
+    <string name="hint_lastname">Last name</string>
+    <string name="hint_reenternewpassword">Re-Enter New Password *</string>
+    <string name="hint_newpassword">New Password *</string>
+    <string name="hint_currentpassword">Current Password *</string>
+    <string name="hint_county">County</string>
+    <string name="hint_state">State</string>
+    <string name="hint_clientname">Client Name</string>
+    <string name="hint_vendorname">Vendor Name</string>
+    <string name="emailerror">Invalid Email</string>
+    <string name="passworderror">Invalid Password</string>
+    <string name="searchview">SearchOrder</string>
+
+
+    <!--vendor Strings-->
+    <string name="nav_scoreboard_vendor">Scoreboard</string>
+    <string name="nav_processing_vendor">Processing Queue</string>
+    <string name="nav_pending_vendor">Pending Queue</string>
+    <string name="nav_completed_vendor">Completed</string>
+    <string name="nav_orderqueue_vendor">Orders Queue</string>
+    <string name="nav_addorder_vendor">Add Orders</string>
+    <string name="nav_exportorder_vendor">Export Orders</string>
+    <string name="nav_dashboard_vendor">Dashboard</string>
+    <string name="nav_myorder_vendor">Orders</string>
+    <string name="nav_viewclients_vendor">View Clients</string>
+    <string name="nav_viewsubclients_vendor">View SubClients</string>
+    <string name="nav_subclient_vendor">Create Subclient</string>
+    <string name="nav_user_vendor">Create User</string>
+    <string name="nav_report_vendor">Report</string>
+    <string name="nav_myaccount_vendor">MyAccount</string>
+    <string name="hint_subclient_code">Sub Client Code</string>
+    <string name="hint_invoice_contact_name">Invoice Contact Name</string>
+    <string name="hint_address_vendor">Address</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="select_all">Select All</string>
+
+    <string name="menu_item_delete">Delete</string>
+    <string name="menu_item_share">Share</string>
+    <string name="content_description" />
+    <string name="menu_document">Document</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_audio">Audio</string>
+    <string name="menu_location">Location</string>
+    <string name="menu_contact">Contact</string>
+</resources>

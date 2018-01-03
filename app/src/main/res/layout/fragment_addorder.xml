@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Customer Name *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addcustomer_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/addinput_layout_ordernumber">
+
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/addinput_ordernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:gravity="left"
+                    android:hint="@string/hint_ordernum" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:id="@+id/addinput_layout_orderdate">
+
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:id="@+id/addinput_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:backgroundTint="#C9C9C9"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="@string/hint_orderdate" />
+
+
+
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Product Type *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addproduct_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="State *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addstate_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="County *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addcounty_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/addinput_layout_city">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:id="@+id/addinput_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:backgroundTint="#C9C9C9"
+                    android:hint="@string/hint_city" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/addinput_layout_zip">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/addinput_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/hint_zip" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/addinput_layout_address">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/addinput_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="@string/hint_address" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/addinput_layout_borrowername">
+
+                <EditText
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:backgroundTint="#C9C9C9"
+                    android:id="@+id/addinput_borrowername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:hint="@string/hint_borrowername" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/addinput_layout_apn">
+
+                <EditText
+
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:id="@+id/addinput_apn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:backgroundTint="#C9C9C9"
+                    android:hint="@string/hint_apn" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Order Task *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addordertask_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Status *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addstatus_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Order Priority *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addorderpriority_spinner"
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="County Type *"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/addcountytype_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                app:backgroundTint="#C9C9C9"
+                style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <Button
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="60dp"
+                android:theme="@style/MyButton"
+                android:gravity="center"
+                android:id="@+id/addbutton_ordersubmit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

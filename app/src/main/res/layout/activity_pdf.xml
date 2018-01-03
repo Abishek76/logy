@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pdf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.drnds.titlelogy.activity.client.orderqueueactivity.PdfActivity">
+    <include
+        android:id="@+id/toolbar_pdf"
+        layout="@layout/toolbar_custom"
+        />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_pdf"
+        android:id="@+id/pdf_webview">
+    </WebView>
+</RelativeLayout>

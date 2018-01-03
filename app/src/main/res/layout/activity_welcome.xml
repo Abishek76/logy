@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <!-- Top Sliding Banners -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_welcome"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/indicator"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/layout_button"
+            app:snap="true"
+            android:padding="5dp"
+            app:fillColor="#215DAA"
+            app:strokeColor="#FF000000"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_button"
+            android:paddingBottom="5dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_marginLeft="5dp"
+                android:text="Client"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button_userlogin"
+                android:theme="@style/MyButton"
+                />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:text="Vendor"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/button_vendorlogin"
+                android:theme="@style/MyButton"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
